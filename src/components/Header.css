@@ -1,0 +1,46 @@
+.header__bar {
+  background: var(--color-navy);
+  color: var(--color-cream);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+}
+
+.header__cv-link {
+    color: var(--color-cream);
+}
+
+.header__cv-link:focus-visible {
+    outline: 0.18rem solid var(--color-brown);
+}
+.header__name {
+    font-family: var(--font-titles);
+    font-size: 2.2rem;
+    text-align: center;
+    letter-spacing: 0.3rem;
+}
+
+.header__nav-list {
+    font-size: 0.9rem;
+    letter-spacing: 0.18rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 0rem;
+}
+
+.header__nav-link {
+    color: var(--color-navy);
+    text-decoration: none;
+}
+
+.header__nav-link--active {
+    border-bottom: 0.13rem solid transparent;
+    border-bottom-color: var(--color-navy);
+}
+
+.header__nav-link:focus-visible {
+    outline: 0.18rem solid var(--color-brown);
+}

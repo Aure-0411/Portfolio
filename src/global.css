@@ -1,0 +1,18 @@
+:root {
+    --color-navy: #0F2340;
+    --color-cream: #F5F1E8;
+    --color-light-grey: #D9D3C5;
+    --color-brown: #A67C2E;
+    --font-texts-links: 'Jost', sans-serif;
+    --font-titles: 'Cormorant Garamond', serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-texts-links);
+    color: var(--color-navy);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
