@@ -1,10 +1,10 @@
 .header__bar {
-  background: var(--color-navy);
-  color: var(--color-cream);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 40px;
+    background: var(--color-navy);
+    color: var(--color-cream);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
 }
 
 .header__cv-link {
@@ -19,9 +19,11 @@
     font-size: 2.2rem;
     text-align: center;
     letter-spacing: 0.3rem;
+    font-weight: 500;
 }
 
 .header__nav-list {
+    text-transform: uppercase;
     font-size: 0.9rem;
     letter-spacing: 0.18rem;
     list-style: none;
@@ -29,18 +31,103 @@
     justify-content: center;
     gap: 2.5rem;
     padding: 0rem;
+    font-weight: 500;
 }
 
 .header__nav-link {
     color: var(--color-navy);
     text-decoration: none;
+    border-bottom: 0.125rem solid transparent;
 }
 
 .header__nav-link--active {
-    border-bottom: 0.13rem solid transparent;
     border-bottom-color: var(--color-navy);
 }
 
 .header__nav-link:focus-visible {
     outline: 0.18rem solid var(--color-brown);
+}
+
+.header__toggle {
+    display: none;
+}
+
+.header__toggle:focus-visible {
+    outline: 0.18rem solid var(--color-brown);
+}
+
+.header__menu-cv {
+    display: none;
+}
+
+.header__menu-cv:focus-visible {
+    outline: 0.18rem solid var(--color-brown);
+}
+
+@media (max-width: 48rem) {
+
+    .header__name {
+        font-size: clamp(1.1875rem, 5vw, 2.2rem);
+        flex: 1;
+        margin: 0;
+        padding-right: 2.75rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .header__top {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 0.75rem;
+    }
+
+    .header__bar {
+        display: none;
+    }
+
+    .header__toggle {
+        display: block;
+        background: transparent;
+        border: none;
+        width: 2.75rem;
+        height: 2.75rem;
+        font-size: 1.5rem;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__nav--open {
+        display: block;
+    }
+
+    .header__nav-list {
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    .header__nav-link {
+        display: flex;
+        align-items: center;
+        min-height: 3.25rem;
+        padding: 1.25rem 2.25rem;
+        border-top: 0.07rem solid var(--color-light-grey);
+    }
+
+    .header__nav-link--active {
+        background: var(--color-cream);
+        border-bottom-color: transparent;
+    }
+
+    .header__menu-cv {
+        color: var(--color-cream);
+        background-color: var(--color-navy);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 3.25rem;
+        margin: 1.25rem 2.25rem;
+        font-weight: 500;
+    }
+
 }
