@@ -1,0 +1,285 @@
+
+/* Partie 1 - Accueil */
+
+.hero {
+    display: flex;
+    background-color: var(--color-cream);
+}
+
+.hero__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.75rem;
+    padding: 6rem 4rem;
+}
+
+.hero__title {
+    margin: 0;
+    font-family: var(--font-titles);
+    font-weight: 500;
+    font-size: clamp(2.875rem, 6vw, 5.25rem);
+    line-height: 1.02;
+}
+
+.hero__title-description {
+    margin: 0;
+    max-width: 32.5rem;
+    font-size: 1.19rem;
+    color: var(--color-salte);
+    line-height: 1.65;
+}
+
+.hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.hero__button {
+    display: inline-flex;
+    min-height: 3.25rem;
+    padding: 0rem 2rem;
+    text-decoration: none;
+    font-weight: 500;
+    border: 1px solid var(--color-navy);
+    background-color: var(--color-navy);
+    color: var(--color-cream);
+    align-items: center;
+    justify-content:center;
+}
+
+.hero__button--secondary {
+    background-color: transparent;
+    color: var(--color-navy);
+}
+
+.hero__button:focus-visible {
+    outline: 0.18rem solid var(--color-brown);
+}
+
+.hero__media {
+    background-color: var(--color-navy);
+    margin: 0;
+    flex: 1;
+    padding: 2rem;
+}
+
+.hero__photo {
+    display: block;
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.hero__caption {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    font-family: var(--font-titles);
+    color: var(--color-cream);
+    font-style: italic;
+    
+}
+
+/* Partie 2 - En-tête de la section 1 et la grille */
+
+.chapters {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 6rem 2.5rem 5rem;   
+}
+
+.chapters__title {
+    margin: 0;
+    font-family: var(--font-titles);
+    font-weight: 500;
+    font-size: clamp(2.125rem, 4vw, 3.375rem);
+    line-height: 1.1;
+}
+
+.chapters__intro {
+    margin: 1rem 0rem 0rem;
+    max-width: 35rem;
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--color-salte);
+}
+
+.chapters__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(18.75rem, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+/* Partie 3 - Les cartes de la section 1 */
+
+.chapters__card {
+    min-height: 29rem;
+    padding: 2.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.8rem;
+}
+
+.chapters__card--projects {
+    background-color: var(--color-navy);
+    color: var(--color-cream);
+}
+
+.chapters__card--path {
+    background-color: var(--color-blue);
+    color: var(--color-cream);
+}
+
+.chapters__card--experiences {
+    background-color: var(--color-sand);
+    color: var(--color-navy);
+}
+
+.chapters__card-title {
+    margin: 0;
+    font-family: var(--font-titles);
+    font-size: 2.7rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.chapters__card-text {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.chapters__card-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+    color: inherit;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 0.4rem;
+}
+
+.chapters__card-link:focus-visible {
+    outline: 0.18rem solid currentColor;
+}
+
+/* Partie 4 - En-tête de la section 2  */
+
+.featured {
+    background-color: var(--color-cream);
+}
+
+.featured__inner {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 5.5rem 2.5rem;
+}
+
+.featured__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.featured__title {
+    margin: 0;
+    font-family: var(--font-titles);
+    font-weight: 500;
+    font-size: clamp(2.125rem, 4vw, 3.375rem);
+    line-height: 1.1;
+}
+
+.featured__all-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+    color: var(--color-navy);
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 0.4rem;
+}
+
+.featured__all-link:focus-visible {
+    outline: 0.18rem solid var(--color-brown);
+}
+
+.featured__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+/* Partie 5 - Les cartes de la section 2  */
+
+.featured__card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.featured__media {
+    height: 20rem;
+}
+
+.featured__media--navy {
+    background-color: var(--color-navy);
+}
+
+.featured__media--blue {
+    background-color: var(--color-blue);
+}
+
+.featured__media--light {
+    background-color: var(--color-blue-light);
+}
+
+.featured__tag {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-gold-dark);
+}
+
+.featured__card-title {
+    margin: 0;
+    font-family: var(--font-titles);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.featured__text {
+    margin:0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-salte);
+}
+
+.featured__tech {
+    margin:0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--color-salte);
+}
+
+.featured__link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+    color: var(--color-navy);
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 0.4rem;
+}
+
+.featured__link:focus-visible {
+    outline: 0.18rem solid var(--color-brown);
+}

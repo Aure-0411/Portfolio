@@ -1,8 +1,16 @@
 :root {
     --color-navy: #0F2340;
+    --color-navy-dark: #0A1930;
     --color-cream: #F5F1E8;
     --color-light-grey: #D9D3C5;
     --color-brown: #A67C2E;
+    --color-salte: #3C4A60;
+    --color-blue: #2B4468;
+    --color-blue-light: #4A5A73;
+    --color-sand: #E4DCC8;
+    --color-gold-dark: #7A5B22;
+    --color-gold-light: #D2B46B;
+    --color-stone: #E6E0D2;
     --font-texts-links: 'Jost', sans-serif;
     --font-titles: 'Cormorant Garamond', serif;
 }
