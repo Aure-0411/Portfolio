@@ -96,6 +96,52 @@ export default function Home() {
 
           </div>
         </section>
+
+        <section className="skills" aria-labelledby="skills-title">
+          <div className="skills__inner">
+
+            <h2 id="skills-title" className="skills__title">Quatre skills à prouver</h2>
+
+            <div className="skills__list">
+
+              <div className="skills__item">
+                <h3 className="skills__name">Communication</h3>
+                <p className="skills__description">Un portfolio synthétique</p>
+                <p className="skills__proof">[Où le prouver : un texte court et clair, par projet.]</p>
+              </div>
+
+              <div className="skills__item">
+                <h3 className="skills__name">Front-end</h3>
+                <p className="skills__description">Un portfolio esthétique</p>
+                <p className="skills__proof">[Où le prouver : la qualité d'intégration du site lui-même.]</p>
+              </div>
+
+              <div className="skills__item">
+                <h3 className="skills__name">UI / UX</h3>
+                <p className="skills__description">Un portfolio ergonomique</p>
+                <p className="skills__proof">[Où le prouver : navigation claire, accessibilité, responsive.]</p>
+              </div>
+
+              <div className="skills__item">
+                <h3 className="skills__name">Itération</h3>
+                <p className="skills__description">Un portfolio mis à jour</p>
+                <p className="skills__proof">[Où le prouver : les derniers projets remplacent les plus anciens.]</p>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+        <section className="contact-me" aria-labelledby="contact-me-title">
+
+          <div className="contact-me__inner">
+            <h2 id="contact-me-title" className="contact-me__title">Une opportunité à discuter ?</h2>
+            <p className="contact-me__text">Stage, alternance, collaboration ou simple retour sur un projet : écris-moi, je réponds rapidement.</p>
+            <a className="contact-me__button" href="/contact">Me contacter</a>
+          </div>
+
+        </section>
     </main>
   )
 }

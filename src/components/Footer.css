@@ -1,0 +1,93 @@
+
+/* Partie 1 - Structure */
+
+.footer {
+    background-color: var(--color-navy-dark);
+    color: var(--color-stone); 
+}
+
+.footer__inner {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 4.5rem 2.5rem 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.footer__brand {
+    display: flex;
+    flex-direction: column;
+    flex: 1.4 1 17.5rem;
+    gap: 1rem;
+}
+
+.footer__nav {
+    flex: 1 1 10rem;
+}
+
+.footer__social {
+    flex: 1 1 12.5rem;
+}
+
+.footer__credits {
+   flex: 1.4 1 17.5rem;
+}
+
+/* Partie 2 - Textes et liens */
+
+.footer__name {
+    margin: 0;
+    font-family: var(--font-titles);
+    font-weight: 500;
+    font-size: 1.75rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--color-cream);
+}
+
+.footer__tagline {
+    margin: 0;
+    max-width: 21.25rem;
+    line-height: 1.6;
+}
+
+.footer__heading {
+    margin: 0 0 0.5rem;
+    font-family: var(--font-titles);
+    font-weight: 500;
+    font-size: 1.375rem;
+    color: var(--color-gold-light);
+}
+
+.footer__link {
+    display: flex;
+    align-items: center;
+    min-height: 2.75rem;
+    color: var(--color-stone);
+    text-decoration: none;
+}
+
+.footer__link:focus-visible {
+    outline: 0.18rem solid var(--color-gold-light);
+}
+
+.footer__credit {
+    margin: 0.625rem 0 0;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+}
+
+/* Partie 3 -La ligne du bas (bottom) */
+
+.footer__bottom {
+   max-width: 80rem;
+   margin: 0 auto;
+   padding: 1.5rem 2.5rem 2rem;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 0.75rem;
+   font-size: 0.875rem;
+   border-top: 1px solid var(--color-blue);
+}
