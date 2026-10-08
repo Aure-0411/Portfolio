@@ -2,7 +2,6 @@ import './Home.css'
 
 export default function Home() {
 
-
   return (
     <main>
         <section className="hero">
