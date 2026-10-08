@@ -10,8 +10,8 @@ export default function App() {
     <a className="skip-link" href="#contenu">Aller au contenu</a>
     <Header/>
     <Routes>
-    < Route path="/" element={<Home/>} />
-    < Route path="/projects" element={<Projects/>} />
+    <Route path="/" element={<Home/>}/>
+    <Route path="/projets" element={<Projects/>}/>
     </Routes>
     <Footer/>
     </>

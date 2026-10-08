@@ -1,0 +1,285 @@
+/* Partie 1 - En-tête et filtres */
+
+.projects-hero {
+    background-color: var(--color-cream);
+}
+
+.projects-hero__inner {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 5.5rem 2.5rem 4.5rem;
+}
+
+.projects-hero__title {
+    margin: 0;
+    font-family: var(--font-titles);
+    font-weight: 500;
+    font-size: clamp(2.875rem, 6vw, 5rem);
+    line-height: 1.02;
+}
+
+.projects-hero__text {
+    margin: 1.5rem 0 0;
+    max-width: 38.75rem;
+    font-size: 1.1875rem;
+    line-height: 1.65;
+    color: var(--color-salte);
+}
+
+.projects-hero__filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 2.5rem;
+}
+
+.projects-hero__filter {
+    min-height: 2.75rem;
+    padding: 0 1.5rem;
+    border: 1px solid var(--color-navy);
+    background-color: white;
+    color: var(--color-navy);
+    font-family: var(--font-texts-links);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.projects-hero__filter--active {
+    background-color: var(--color-navy);
+    color: var(--color-cream);
+}
+
+.projects-hero__filter:focus-visible {
+    outline: 0.18rem solid var(--color-brown);
+    outline-offset: 0.2rem;
+}
+
+/* Partie 2 - Liste des projets */
+
+.projects-list {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 1.5rem 2.5rem 2.5rem;
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.5rem;
+    padding: 4rem 0;
+    border-bottom: 1px solid var(--color-light-grey);
+}
+
+.project:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.project__media {
+    flex: 1 1 18rem;
+    min-height: 30rem;
+    display: flex;
+    align-items: flex-end;
+    padding: 1.75rem;
+}
+
+.project__placeholder {
+    font-family: var(--font-titles);
+    font-style: italic;
+    font-size: 1.875rem;
+    color: var(--color-cream);
+}
+
+.project__media--navy {
+    background-color: var(--color-navy);
+}
+
+.project__media--blue {
+    background-color: var(--color-blue);
+}
+
+.project__media--light {
+    background-color: var(--color-blue-light);
+}
+
+.project__body {
+    flex: 1 1 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.375rem;
+}
+
+.project__tag {
+    margin: 0;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--color-gold-dark);
+}
+
+.project__title {
+    margin: 0;
+    font-family: var(--font-titles);
+    font-weight: 500;
+    font-size: 2.75rem;
+    line-height: 1.06;
+}
+
+.project__label {
+    margin: 0 0 0.375rem;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--color-gold-dark);
+}
+
+.project__text {
+    margin: 0;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    color: var(--color-salte);
+}
+
+.project__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.75rem;
+}
+
+.project__link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+    color: var(--color-navy);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 0.375rem;
+}
+
+.project__link:focus-visible {
+    outline: 0.18rem solid var(--color-brown);
+}
+
+/* Partie 3 - Invitation à me contacter */
+
+.projects-cta {
+    background-color: var(--color-navy);
+    color: var(--color-cream);
+}
+
+.projects-cta__inner {
+    max-width: 55rem;
+    margin: 0 auto;
+    padding: 5.5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.projects-cta__title {
+    margin: 0;
+    font-family: var(--font-titles);
+    font-weight: 500;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.1;
+}
+
+.projects-cta__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3.25rem;
+    padding: 0 2.25rem;
+    background-color: var(--color-cream);
+    color: var(--color-navy);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.projects-cta__button:focus-visible {
+    outline: 0.18rem solid var(--color-gold-light);
+    outline-offset: 0.2rem;
+}
+
+/* Partie 4 - Responsive */
+
+@media (max-width: 48rem) {
+    .projects-hero__inner {
+        padding: 3.5rem 1.25rem 2.5rem;
+    }
+
+    .projects-hero__title {
+        font-size: 2.75rem;
+    }
+
+    .projects-hero__text {
+        margin-top: 1.25rem;
+        font-size: 1.0625rem;
+    }
+
+    .projects-hero__filters {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1.75rem;
+    }
+
+    .projects-hero__filter {
+        width: 100%;
+        padding: 0 1.25rem;
+        text-align: left;
+    }
+
+    .projects-list {
+        padding: 0.5rem 1.25rem 0;
+    }
+
+    .project,
+    .project:nth-child(even) {
+        flex-direction: column;
+        gap: 1.25rem;
+        padding: 2.5rem 0;
+    }
+
+    .project__media {
+        flex: none;
+        min-height: 16.25rem;
+    }
+
+    .project__body {
+        flex: none;
+        gap: 1.25rem;
+    }
+
+    .project__title {
+        font-size: 2rem;
+    }
+
+    .project__text {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .project__links {
+        gap: 0 1.5rem;
+    }
+
+    .projects-cta__inner {
+        padding: 3.5rem 1.25rem;
+        align-items: stretch;
+        text-align: left;
+    }
+
+    .projects-cta__title {
+        font-size: 2rem;
+    }
+
+        .project__media {
+        padding: 1.25rem;
+    }
+
+    .project__placeholder {
+        font-size: 1.625rem;
+    }
+}
