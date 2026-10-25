@@ -18,10 +18,10 @@ export default function Experiences() {
     },
 
     {
-      kind: "Séminaire",
-      title: "Java Seminar",
-      meta: "Epitech, octobre 2026",
-      text: "Série d'exercices quotidiens pour apprendre Java : les bases du langage, la programmation orientée objet, les packages puis l'héritage. J'y apprends à structurer un programme en classes et à le faire évoluer d'une tâche à l'autre.",
+      kind: "Gestion de projet IT",
+      title: "Migration Sage",
+      meta: "CreITvity Consulting, alternance",
+      text: "Migration vers Sage des données financières d'un client : étant chef de rojet sur cette mission, j'ai du orchestrer le cadrage des besoins, la reprise des données, les tests, la mise en production. J’y ai appris à planifier, à coordonner les différents interlocuteurs et à mener un projet jusqu’à sa livraison."
     },
   ]
 
@@ -80,16 +80,18 @@ export default function Experiences() {
               <li className="extras__chip">Taekwondo</li>
               <li className="extras__chip">Développement web</li>
               <li className="extras__chip">Programmation en Java</li>
+              <li className="extras__chip">IA</li>
+              <li className="extras__chip">Cyber</li>
             </ul>
           </div>
 
-          <div className="extras__block">
+          {/* <div className="extras__block">
             <h2 className="extras__title">Œuvres qui m'inspirent</h2>
             <ul className="extras__works">
               <li><em>Le site de Ralph Lauren</em>, dont je me suis inspiré pour le design de ce portfolio.</li>
               <li><em>JobTeaser</em> et <em>Welcome to the Jungle</em>, dont je me suis inspiré pour le design du Job Board.</li>
             </ul>
-          </div>
+          </div> */}
 
         </div>
       </section>
