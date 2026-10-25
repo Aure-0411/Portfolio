@@ -92,7 +92,7 @@ export default function Contact() {
         <div className="contact-cv__inner">
           <div className="contact-cv__content">
             <h2 id="contact-cv-title" className="contact-cv__title">Mon CV</h2>
-            <p className="contact-cv__text">Format PDF, [taille du fichier], mis à jour le [date].</p>
+            <p className="contact-cv__text">Format PDF, 92 Ko, mis à jour le 25 octobre 2026.</p>
           </div>
           <a className="contact-cv__button" href={`${import.meta.env.BASE_URL}cv-aurelien-thibaut.pdf`} download>Télécharger le CV (PDF)</a>
         </div>
