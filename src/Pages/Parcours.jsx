@@ -3,32 +3,33 @@ import './Parcours.css'
 export default function Parcours() {
 
   const steps = [
+    
     {
-      when: "Début octobre 2026",
-      title: "Concevoir le portfolio",
-      learned: "Partir d'une maquette (version ordinateur et version mobile en 320 px), écrire un HTML sémantique, puis structurer le site en composants React avec Vite et React Router.",
-      progress: "Je suis passé d'une page HTML unique à une application de cinq pages, avec un en-tête, un pied de page et des cartes réutilisés partout.",
+      when: "Septembre 2026",
+      title: "Première piscine : Développement Web",
+      learned: "Les fondamentaux du développement web côté serveur : créer des pages interactives, gérer des formulaires, et faire communiquer une page avec un serveur sans recharger la page, jusqu'à connecter le tout à une base de données, à travers des exercices quotidiens.",
+      progress: "D'un simple échange d'informations entre la page et le serveur jusqu'à un formulaire connecté à une base de données qui réagit en temps réel, chaque exercice reprenait et enrichissait les principes du précédent : j'ai appris à organiser mon code dès le départ pour qu'il reste clair en se complexifiant, et à être rigoureux sur les détails attendus plutôt que de me fier au seul résultat visuel.",
+    },
+
+    {
+      when: "Du 21 septembre au 25 octobre 2026",
+      title: "Construction du portfolio (projet de fond)",
+      learned: "Concevoir et coder un site complet, de la maquette à la mise en ligne : React avec Vite, CSS en BEM et en rem, cinq pages, accessibilité et publication automatique avec GitHub Actions.",
+      progress: "C'est mon projet de fond : j'ai appris à avancer étape par étape, à tester chaque page puis à corriger à partir des audits, jusqu'à obtenir 100 en accessibilité, bonnes pratiques et SEO sur Lighthouse mobile.",
     },
 
     {
       when: "Du 5 au 18 octobre 2026",
-      title: "Réaliser le Job Board en binôme",
-      learned: "Construire un site d'offres d'emploi avec React, une API FastAPI et une base SQLite, en travaillant avec Git sur une branche chacun.",
-      progress: "C'est mon premier projet avec un back-end : j'ai conçu la base et l'API, puis je les ai reliées à l'interface.",
+      title: "Job Board (premier projet après la piscine web)",
+      learned: "Construire un site d'offres d'emploi avec React, une API FastAPI et une base SQLite, en travaillant en binôme avec Git, une branche chacun.",
+      progress: "C'est mon premier projet avec un back-end : j'ai conçu la base et l'API, puis je les ai reliées à l'interface. J'ai appris à définir les routes de l'API avant de coder pour que nous avancions en parallèle.",
     },
 
     {
-      when: "Depuis la mi-octobre 2026",
-      title: "Apprendre Java et l'objet",
-      learned: "Les bases du langage, les classes, les packages et l'héritage, à travers des exercices quotidiens au Java Seminar.",
-      progress: "Je structure maintenant un programme en classes et je le fais évoluer d'une tâche à l'autre.",
-    },
-
-    {
-      when: "Fin octobre 2026",
-      title: "Publier et rendre le site accessible",
-      learned: "Écrire un CSS organisé en BEM, adapter la mise en page jusqu'à 320 px, soigner l'accessibilité (lien d'évitement, focus visible, repères nommés) et publier avec GitHub Actions.",
-      progress: "Le portfolio est en ligne et se met à jour à chaque git push, sans aucune étape manuelle.",
+      when: "Octobre 2026",
+      title: "Seconde piscine : Java",
+      learned: "Les bases de Java, la programmation orientée objet, les packages puis l'héritage, à travers des exercices quotidiens.",
+      progress: "À partir des packages, le même code évolue de tâche en tâche et il est vérifié plusieurs fois : j'ai appris à structurer mes classes dès le départ pour les faire évoluer sans tout reprendre.",
     },
   ]
 
@@ -89,7 +90,7 @@ export default function Parcours() {
       </section>
 
       <section className="skills-matrix" aria-labelledby="skills-matrix-title">
-        
+
         <div className="skills-matrix__inner">
           <h2 id="skills-matrix-title" className="skills-matrix__title">Compétences et projets liés</h2>
           <p className="skills-matrix__intro">Une même compétence peut apparaître dans plusieurs projets, avec une maîtrise différente selon le contexte.</p>
@@ -150,7 +151,7 @@ export default function Parcours() {
               </div>
             ))}
           </div>
-          
+
         </div>
 
       </section>

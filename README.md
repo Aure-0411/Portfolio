@@ -95,6 +95,17 @@ Le site étant servi sous `/Portfolio/`, ce chemin est géré à trois endroits 
 - Titres hiérarchisés (un seul `h1` par page) et texte alternatif pour les images.
 - Titre et description propres à chaque page, pour le référencement.
 
+## Qualité (Lighthouse)
+
+Audit réalisé le 25 octobre 2026 sur la page d'accueil en ligne, en version mobile (PageSpeed Insights) :
+
+| Catégorie | Score |
+|---|---|
+| Performances | 82 |
+| Accessibilité | 100 |
+| Bonnes pratiques | 100 |
+| SEO | 100 |
+
 ## Ressources et crédits
 
 - **Polices** : Cormorant Garamond et Jost, sous licence SIL Open Font.
