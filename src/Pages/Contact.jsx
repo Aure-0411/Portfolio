@@ -5,13 +5,19 @@ export default function Contact() {
 
   const [sent, setSent] = useState(false)
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault()
-    const data = new FormData(event.currentTarget)
-    const subject = encodeURIComponent(data.get('subject'))
-    const body = encodeURIComponent(`${data.get('message')}\n\n${data.get('name')} (${data.get('email')})`)
-    window.location.href = `mailto:aurelien.thibaut@epitech.eu?subject=${subject}&body=${body}`
-    setSent(true)
+    const form = event.currentTarget
+    const data = new FormData(form)
+    const response = await fetch('https://formspree.io/f/meaaajdn', {
+      method: 'POST',
+      body: data,
+      headers: { Accept: 'application/json' }
+    })
+    if (response.ok) {
+      setSent(true)
+      form.reset()
+    }
   }
 
   return (
