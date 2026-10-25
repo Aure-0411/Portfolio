@@ -108,6 +108,7 @@ export default function Home() {
               <h3 className="skills__name">organisation du quotidien</h3>
               <p className="skills__description">Tenir plusieurs fronts</p>
               <p className="skills__proof">Études à Epitech, cours de taekwondo et projets personels : j’ai appris à planifier, prioriser et tenir mes délais, du portfolio au Job Board.</p>
+            </div>
 
             <div className="skills__item">
               <h3 className="skills__name">Relation client</h3>
