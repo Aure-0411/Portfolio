@@ -4,46 +4,49 @@ export default function Parcours() {
 
   const steps = [
     {
-      when: "[Période 1]",
-      title: "[Ce que j'ai abordé]",
-      learned: "[Ce que j'ai appris : notions, outils, méthodes.]",
-      progress: "[Progrès constaté : où tu en étais au début, où tu en es, avec une preuve à l'appui.]",
+      when: "Début octobre 2026",
+      title: "Concevoir le portfolio",
+      learned: "Partir d'une maquette (version ordinateur et version mobile en 320 px), écrire un HTML sémantique, puis structurer le site en composants React avec Vite et React Router.",
+      progress: "Je suis passé d'une page HTML unique à une application de cinq pages, avec un en-tête, un pied de page et des cartes réutilisés partout.",
     },
 
     {
-      when: "[Période 2]",
-      title: "[Ce que j'ai abordé]",
-      learned: "[Ce que j'ai appris : notions, outils, méthodes.]",
-      progress: "[Progrès constaté : où tu en étais au début, où tu en es, avec une preuve à l'appui.]",
+      when: "Du 5 au 18 octobre 2026",
+      title: "Réaliser le Job Board en binôme",
+      learned: "Construire un site d'offres d'emploi avec React, une API FastAPI et une base SQLite, en travaillant avec Git sur une branche chacun.",
+      progress: "C'est mon premier projet avec un back-end : j'ai conçu la base et l'API, puis je les ai reliées à l'interface.",
     },
 
     {
-      when: "[Période 3]",
-      title: "[Ce que j'ai abordé]",
-      learned: "[Ce que j'ai appris : notions, outils, méthodes.]",
-      progress: "[Progrès constaté : où tu en étais au début, où tu en es, avec une preuve à l'appui.]",
+      when: "Depuis la mi-octobre 2026",
+      title: "Apprendre Java et l'objet",
+      learned: "Les bases du langage, les classes, les packages et l'héritage, à travers des exercices quotidiens au Java Seminar.",
+      progress: "Je structure maintenant un programme en classes et je le fais évoluer d'une tâche à l'autre.",
     },
 
     {
-      when: "[Période 4]",
-      title: "[Ce que j'ai abordé]",
-      learned: "[Ce que j'ai appris : notions, outils, méthodes.]",
-      progress: "[Progrès constaté : où tu en étais au début, où tu en es, avec une preuve à l'appui.]",
+      when: "Fin octobre 2026",
+      title: "Publier et rendre le site accessible",
+      learned: "Écrire un CSS organisé en BEM, adapter la mise en page jusqu'à 320 px, soigner l'accessibilité (lien d'évitement, focus visible, repères nommés) et publier avec GitHub Actions.",
+      progress: "Le portfolio est en ligne et se met à jour à chaque git push, sans aucune étape manuelle.",
     },
   ]
 
   const skills = [
-    { name: "Intégration HTML et CSS", level: "[Ton niveau]", projects: "[Projet 1], [Projet 3]" },
-    { name: "Responsive et accessibilité", level: "[Ton niveau]", projects: "[Projet 1], [ce portfolio]" },
-    { name: "SEO et performance", level: "[Ton niveau]", projects: "[Ce portfolio]" },
-    { name: "Déploiement automatisé", level: "[Ton niveau]", projects: "[Ce portfolio], [Projet 2]" },
-    { name: "Rédaction et communication", level: "[Ton niveau]", projects: "[Tous les projets]" },
+    { name: "Intégration HTML et CSS", level: "Intermédiaire", projects: "Portfolio, Job Board (page de détail)" },
+    { name: "Responsive et accessibilité", level: "Intermédiaire", projects: "Portfolio" },
+    { name: "React et composants", level: "Intermédiaire", projects: "Portfolio, Job Board" },
+    { name: "API et base de données", level: "Notions", projects: "Job Board" },
+    { name: "SEO et performance", level: "Notions", projects: "Portfolio" },
+    { name: "Déploiement automatisé", level: "Notions", projects: "Portfolio" },
+    { name: "Rédaction et communication", level: "Intermédiaire", projects: "Tous les projets" },
   ]
 
   const diplomas = [
-    { title: "[Diplôme ou formation]", detail: "[Établissement, année]" },
-    { title: "[Certification]", detail: "[Organisme, année]" },
-    { title: "[Distinction]", detail: "[Contexte, année]" },
+    { title: "CQP MAM et diplôme d'assistant coach", detail: "FFTDA, juillet 2026" },
+    { title: "Bachelor 3 Gestion du développement commercial", detail: "ESVE, La Défense, 2025 - 2026" },
+    { title: "Diplôme fédéral de 2e Dan de Taekwondo", detail: "FFTDA, janvier 2025" },
+    { title: "BTS MCO", detail: "Pôle STS ESM, Joinville-le-Pont, 2021 - 2023" },
   ]
 
   return (
@@ -112,9 +115,9 @@ export default function Parcours() {
           <div className="challenges__block">
             <h2 className="challenges__title">Difficultés rencontrées</h2>
             <ul className="challenges__list">
-              <li>[Difficulté 1 : ce qui a bloqué et comment tu l'as surmontée.]</li>
-              <li>[Difficulté 2 : ce qui a bloqué et comment tu l'as surmontée.]</li>
-              <li>[Difficulté 3 : ce qui a bloqué et comment tu l'as surmontée.]</li>
+              <li>Le site construit affichait une page blanche : le chemin de base sous /Portfolio/ n'était pas pris en compte. Je l'ai corrigé dans la configuration de Vite et dans le routeur.</li>
+              <li>Certaines règles CSS n'avaient aucun effet : une faute de frappe dans un nom de propriété, ou une règle placée avant celle qui devait l'emporter. J'ai appris à inspecter les styles avec les outils du navigateur.</li>
+              <li>Le serveur de développement ne répondait plus depuis WSL : j'ai appris à repérer le processus qui bloquait le port et à relancer proprement l'environnement.</li>
             </ul>
           </div>
 
@@ -122,9 +125,9 @@ export default function Parcours() {
 
             <h2 className="challenges__title">Axes d'amélioration</h2>
             <ul className="challenges__list">
-              <li>[Axe 1 : ce que tu veux renforcer en priorité.]</li>
-              <li>[Axe 2 : ce que tu veux renforcer ensuite.]</li>
-              <li>[Axe 3 : un objectif à plus long terme.]</li>
+              <li>Optimiser les images (format WebP, poids réduit) pour améliorer les performances.</li>
+              <li>Approfondir le back-end : sécurité de l'API, gestion des erreurs et tests.</li>
+              <li>Aller plus loin en accessibilité, en testant mes pages avec un lecteur d'écran.</li>
             </ul>
 
           </div>

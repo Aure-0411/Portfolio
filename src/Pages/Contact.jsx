@@ -40,11 +40,6 @@ export default function Contact() {
             </div>
 
             <div>
-              <h3 className="contact-details__label">Téléphone</h3>
-              <a className="contact-details__link" href="#">[Ton numéro]</a>
-            </div>
-
-            <div>
               <h3 className="contact-details__label">Localisation</h3>
               <p className="contact-details__text">Paris, France</p>
             </div>
@@ -84,7 +79,7 @@ export default function Contact() {
             <button className="contact-form__button" type="submit">Envoyer le message</button>
 
             {sent && (
-              <p className="contact-form__status" role="status">Ton application de messagerie devrait s'ouvrir avec le message prêt à partir. Sinon, écris-moi directement à aurelien.thibaut@epitech.eu.</p>
+              <p className="contact-form__status" role="status">Votre application de messagerie devrait s'ouvrir avec le message prêt à partir. Sinon, écrivez-moi directement à aurelien.thibaut@epitech.eu.</p>
             )}
           </form>
 

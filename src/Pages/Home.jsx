@@ -15,8 +15,8 @@ export default function Home() {
 
         <div className="hero__content">
 
-          <h1 className="hero__title">Découvrez mon Portfolio !</h1>
-          <p className="hero__title-description">[Deux phrases pour te présenter : ta formation, ce qui te motive, et ce que tu recherches (stage, alternance, premier poste).]</p>
+          <h1 className="hero__title">Des interfaces précises, accessibles et élégantes.</h1>
+          <p className="hero__title-description">Étudiant à Epitech en reconversion vers le développement, je conçois des projets web accessibles et responsive. Instructeur de taekwondo en club, j'ai appris à coordonner, encadrer et communiquer : je recherche une alternance pour mettre ces qualités au service d'une équipe technique.</p>
 
           <div className="hero__actions">
             <Link className="hero__button" to="/projets">Découvrir mes projets</Link>
@@ -27,7 +27,7 @@ export default function Home() {
 
         <figure className="hero__media">
           <img className="hero__photo" src={`${import.meta.env.BASE_URL}photo-aurelien.jpg`} alt="Portrait d'Aurélien THIBAUT"></img>
-          <figcaption className="hero__caption">BlablaBla</figcaption>
+          <figcaption className="hero__caption">Aurélien Thibaut, étudiant à Epitech et instructeur de taekwondo.</figcaption>
         </figure>
 
       </section>
@@ -53,7 +53,7 @@ export default function Home() {
 
           <article className="chapters__card chapters__card--experiences">
             <h3 className="chapters__card-title">Expériences</h3>
-            <p className="chapters__card-text">Hub, associations, événements : tout ce qui se passe en dehors des projets scolaires.</p>
+            <p className="chapters__card-text">Taekwondo, mission de Customer Success Manager, séminaire Java : tout ce qui se passe en dehors des projets scolaires.</p>
             <Link className="chapters__card-link" to="/experiences">Découvrir mes expériences</Link>
           </article>
 
@@ -102,25 +102,25 @@ export default function Home() {
             <div className="skills__item">
               <h3 className="skills__name">Communication</h3>
               <p className="skills__description">Un portfolio synthétique</p>
-              <p className="skills__proof">[Où le prouver : un texte court et clair, par projet.]</p>
+              <p className="skills__proof">Chaque projet tient en trois blocs courts : contexte et objectif, compétences, enseignements.</p>
             </div>
 
             <div className="skills__item">
               <h3 className="skills__name">Front-end</h3>
               <p className="skills__description">Un portfolio esthétique</p>
-              <p className="skills__proof">[Où le prouver : la qualité d'intégration du site lui-même.]</p>
+              <p className="skills__proof">Un site intégré avec React, un CSS organisé en BEM et une mise en page responsive jusqu'à 320 px.</p>
             </div>
 
             <div className="skills__item">
               <h3 className="skills__name">UI / UX</h3>
               <p className="skills__description">Un portfolio ergonomique</p>
-              <p className="skills__proof">[Où le prouver : navigation claire, accessibilité, responsive.]</p>
+              <p className="skills__proof">Un menu adapté au mobile, un lien d'évitement et un focus visible au clavier.</p>
             </div>
 
             <div className="skills__item">
               <h3 className="skills__name">Itération</h3>
               <p className="skills__description">Un portfolio mis à jour</p>
-              <p className="skills__proof">[Où le prouver : les derniers projets remplacent les plus anciens.]</p>
+              <p className="skills__proof">Le site se met à jour à chaque git push, grâce à GitHub Actions.</p>
             </div>
 
           </div>
@@ -133,7 +133,7 @@ export default function Home() {
 
         <div className="contact-me__inner">
           <h2 id="contact-me-title" className="contact-me__title">Une opportunité à discuter ?</h2>
-          <p className="contact-me__text">Stage, alternance, collaboration ou simple retour sur un projet : écris-moi, je réponds rapidement.</p>
+          <p className="contact-me__text">Stage, alternance, collaboration ou simple retour sur un projet : écrivez-moi, je vous répondrai dans les meilleurs délais.</p>
           <Link className="contact-me__button" to="/contact">Me contacter</Link>
         </div>
 

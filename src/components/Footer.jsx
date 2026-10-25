@@ -10,7 +10,7 @@ export default function Footer() {
 
             <div className="footer__brand">
                  <p className="footer__name">Aurélien THIBAUT</p>
-                 <p className="footer__tagline">[Ta phrase d'accroche, en une ligne.]</p>
+                 <p className="footer__tagline">Étudiant à Epitech, développeur web en formation et instructeur de taekwondo.</p>
             </div>
 
             <nav className="footer__nav" aria-label="Plan du site">
@@ -32,8 +32,7 @@ export default function Footer() {
             <div className="footer__credits">
                 <h2 className="footer__heading">Crédits et ressources</h2>
                 <p className="footer__credit">Polices : Cormorant Garamond et Jost, sous licence SIL Open Font.</p>
-                <p className="footer__credit">Images : [source libre de droit ou crédit à renseigner].</p>
-                <p className="footer__credit">Icônes : [source et licence].</p>
+                <p className="footer__credit">Photo : portrait personnel.</p>
             </div>
 
         </div>

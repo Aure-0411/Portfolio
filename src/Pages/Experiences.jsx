@@ -4,24 +4,24 @@ export default function Experiences() {
 
   const experiences = [
     {
+      kind: "Club de taekwondo",
+      title: "Instructeur et service civique",
+      meta: "Plessis-Trévise, depuis juin 2024",
+      text: "J'anime des séances de taekwondo auprès de publics variés, je planifie la progression technique et je coordonne des événements : compétitions, training camp et projets menés avec le CDT Val-de-Marne et la Ligue IDF. J'y ai aussi monté des dossiers de subventions et créé des outils de communication.",
+    },
+
+    {
+      kind: "Mission professionnelle",
+      title: "Customer Success Manager",
+      meta: "CreITvity Consulting et VivaTech, octobre 2025 - septembre 2026",
+      text: "J'ai géré les relations grand compte de CreITvity à toutes les étapes des projets : cadrage des besoins, élaboration de l'offre, proposition de valeur, négociation et devis. De décembre 2025 à juin 2026, j'ai aussi géré l'inbox attendee de VivaTech en prestation de service.",
+    },
+
+    {
       kind: "Séminaire",
       title: "Java Seminar",
       meta: "Epitech, octobre 2026",
       text: "Série d'exercices quotidiens pour apprendre Java : les bases du langage, la programmation orientée objet, les packages puis l'héritage. J'y apprends à structurer un programme en classes et à le faire évoluer d'une tâche à l'autre.",
-    },
-
-    {
-      kind: "Hub",
-      title: "[Activité au Hub]",
-      meta: "[Ton rôle, période]",
-      text: "[Ce que j'y ai fait et ce que cela m'a apporté : une compétence, une rencontre ou une méthode.]",
-    },
-
-    {
-      kind: "Association",
-      title: "[Nom de l'association]",
-      meta: "[Ton rôle, période]",
-      text: "[Ce que j'y ai fait et ce que cela m'a apporté : une compétence, une rencontre ou une méthode.]",
     },
   ]
 
@@ -36,7 +36,7 @@ export default function Experiences() {
 
         <div className="experiences-hero__inner">
           <h1 className="experiences-hero__title">Au-delà des projets scolaires</h1>
-          <p className="experiences-hero__text">Le Hub, les associations et les événements : ce que j'y ai fait et ce que cela m'a apporté.</p>
+          <p className="experiences-hero__text">Taekwondo, mission professionnelle, séminaire Java : ce que j'y ai fait et ce que cela m'a apporté.</p>
         </div>
 
       </section>
@@ -77,10 +77,9 @@ export default function Experiences() {
           <div className="extras__block">
             <h2 className="extras__title">Centres d'intérêt</h2>
             <ul className="extras__chips">
+              <li className="extras__chip">Taekwondo</li>
               <li className="extras__chip">Développement web</li>
               <li className="extras__chip">Programmation en Java</li>
-              <li className="extras__chip">[Loisir ou centre d'intérêt 3]</li>
-              <li className="extras__chip">[Loisir ou centre d'intérêt 4]</li>
             </ul>
           </div>
 
@@ -89,7 +88,6 @@ export default function Experiences() {
             <ul className="extras__works">
               <li><em>Le site de Ralph Lauren</em>, dont je me suis inspiré pour le design de ce portfolio.</li>
               <li><em>JobTeaser</em> et <em>Welcome to the Jungle</em>, dont je me suis inspiré pour le design du Job Board.</li>
-              <li><em>[Titre de l'œuvre 3]</em>, [auteur ou créateur]</li>
             </ul>
           </div>
 
