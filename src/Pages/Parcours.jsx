@@ -34,12 +34,12 @@ export default function Parcours() {
   ]
 
   const skills = [
-    { name: "Intégration HTML et CSS", level: "Intermédiaire", projects: "Portfolio, Job Board (page de détail et menu)" },
-    { name: "Responsive et accessibilité", level: "Intermédiaire", projects: "Portfolio (100 en accessibilité sur Lighthouse)" },
+    { name: "Intégration HTML et CSS", level: "Intermédiaire", projects: "Portfolio, Job Board" },
+    { name: "Responsive et accessibilité", level: "Intermédiaire", projects: "Portfolio" },
     { name: "React et composants", level: "Intermédiaire", projects: "Portfolio, Job Board" },
-    { name: "API et base de données", level: "Notions", projects: "Job Board (FastAPI, SQLite)" },
-    { name: "Git et déploiement automatisé", level: "Notions", projects: "Job Board (branches), Portfolio (GitHub Actions)" },
-    { name: "SEO et performance", level: "Notions", projects: "Portfolio (100 en SEO, 82 en performance)" },
+    { name: "API et base de données", level: "Notions", projects: "Job Board" },
+    { name: "Git et déploiement automatisé", level: "Notions", projects: "Job Board & Portfolio" },
+    { name: "SEO et performance", level: "Notions", projects: "Portfolio & Job Board" },
     { name: "Programmation orientée objet en Java", level: "Notions", projects: "Java Seminar" },
     { name: "Rédaction et communication", level: "Intermédiaire", projects: "Tous les projets" },
   ]
