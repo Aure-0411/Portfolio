@@ -3,7 +3,7 @@ import './Parcours.css'
 export default function Parcours() {
 
   const steps = [
-    
+
     {
       when: "Septembre 2026",
       title: "Première piscine : Développement Web",
@@ -34,12 +34,13 @@ export default function Parcours() {
   ]
 
   const skills = [
-    { name: "Intégration HTML et CSS", level: "Intermédiaire", projects: "Portfolio, Job Board (page de détail)" },
-    { name: "Responsive et accessibilité", level: "Intermédiaire", projects: "Portfolio" },
+    { name: "Intégration HTML et CSS", level: "Intermédiaire", projects: "Portfolio, Job Board (page de détail et menu)" },
+    { name: "Responsive et accessibilité", level: "Intermédiaire", projects: "Portfolio (100 en accessibilité sur Lighthouse)" },
     { name: "React et composants", level: "Intermédiaire", projects: "Portfolio, Job Board" },
-    { name: "API et base de données", level: "Notions", projects: "Job Board" },
-    { name: "SEO et performance", level: "Notions", projects: "Portfolio" },
-    { name: "Déploiement automatisé", level: "Notions", projects: "Portfolio" },
+    { name: "API et base de données", level: "Notions", projects: "Job Board (FastAPI, SQLite)" },
+    { name: "Git et déploiement automatisé", level: "Notions", projects: "Job Board (branches), Portfolio (GitHub Actions)" },
+    { name: "SEO et performance", level: "Notions", projects: "Portfolio (100 en SEO, 82 en performance)" },
+    { name: "Programmation orientée objet en Java", level: "Notions", projects: "Java Seminar" },
     { name: "Rédaction et communication", level: "Intermédiaire", projects: "Tous les projets" },
   ]
 
@@ -116,6 +117,8 @@ export default function Parcours() {
           <div className="challenges__block">
             <h2 className="challenges__title">Difficultés rencontrées</h2>
             <ul className="challenges__list">
+              <li>Entre la piscine web, React, l'API et Java, les notions se sont enchaînées très vite : il était difficile de tout comprendre, de tout retenir et de savoir les appliquer au bon moment. J'ai avancé étape par étape, en codant moi-même chaque étape et en testant avant de passer à la suivante.</li>
+              <li>Les erreurs d'import bloquaient toute la construction du site : chemin relatif erroné, nom de fichier ou de composant mal écrit, comme un accent en trop. J'ai pris l'habitude de lire le message d'erreur, qui indique le fichier et la ligne, et de lancer npm run build avant chaque envoi sur GitHub.</li>
               <li>Le site construit affichait une page blanche : le chemin de base sous /Portfolio/ n'était pas pris en compte. Je l'ai corrigé dans la configuration de Vite et dans le routeur.</li>
               <li>Certaines règles CSS n'avaient aucun effet : une faute de frappe dans un nom de propriété, ou une règle placée avant celle qui devait l'emporter. J'ai appris à inspecter les styles avec les outils du navigateur.</li>
               <li>Le serveur de développement ne répondait plus depuis WSL : j'ai appris à repérer le processus qui bloquait le port et à relancer proprement l'environnement.</li>
@@ -126,9 +129,11 @@ export default function Parcours() {
 
             <h2 className="challenges__title">Axes d'amélioration</h2>
             <ul className="challenges__list">
+              <li>Consolider ce que j'apprends : refaire seul un petit exercice après chaque notion et noter les points qui m'ont posé problème.</li>
               <li>Optimiser les images (format WebP, poids réduit) pour améliorer les performances.</li>
               <li>Approfondir le back-end : sécurité de l'API, gestion des erreurs et tests.</li>
               <li>Aller plus loin en accessibilité, en testant mes pages avec un lecteur d'écran.</li>
+              <li>Fiabiliser avant de publier : vérifier la construction, la navigation au clavier et l'audit Lighthouse avant chaque envoi.</li>
             </ul>
 
           </div>
