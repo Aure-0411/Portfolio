@@ -12,7 +12,7 @@ export default function Header() {
 
       <div className="header__bar">
         <p className="header__bar-text">Portfolio mis à jour à chaque nouveau projet</p>
-        <a className="header__cv-link" href="/cv-aurelien-thibaut.pdf" download>Télécharger mon CV (PDF)</a>
+        <a className="header__cv-link" href={`${import.meta.env.BASE_URL}cv-aurelien-thibaut.pdf`} download>Télécharger mon CV (PDF)</a>
       </div>
 
       <div className="header__top">
@@ -25,12 +25,12 @@ export default function Header() {
         <ul className="header__nav-list">
           <li className="header__nav-item"><NavLink to="/" end className={({ isActive }) => `header__nav-link ${isActive ? 'header__nav-link--active' : ''}`}>accueil</NavLink></li>
           <li className="header__nav-item"><NavLink to="/projets" className={({ isActive }) => `header__nav-link ${isActive ? 'header__nav-link--active' : ''}`}>projets</NavLink></li>
-          <li className="header__nav-item"><a className="header__nav-link" href="/parcours">parcours</a></li>
-          <li className="header__nav-item"><a className="header__nav-link" href="/experiences">expériences</a></li>
-          <li className="header__nav-item"><a className="header__nav-link" href="/contact">contact</a></li>
+          <li className="header__nav-item"><NavLink to="/parcours" className={({ isActive }) => `header__nav-link ${isActive ? 'header__nav-link--active' : ''}`}>parcours</NavLink></li>
+          <li className="header__nav-item"><NavLink to="/experiences" className={({ isActive }) => `header__nav-link ${isActive ? 'header__nav-link--active' : ''}`}>expériences</NavLink></li>
+          <li className="header__nav-item"><NavLink to="/contact" className={({ isActive }) => `header__nav-link ${isActive ? 'header__nav-link--active' : ''}`}>contact</NavLink></li>
         </ul>
 
-        <a className="header__menu-cv" href="/cv-aurelien-thibaut.pdf" download>Télécharger mon CV (PDF)</a>
+        <a className="header__menu-cv" href={`${import.meta.env.BASE_URL}cv-aurelien-thibaut.pdf`} download>Télécharger mon CV (PDF)</a>
 
       </nav>
 

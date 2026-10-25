@@ -1,0 +1,278 @@
+/* Partie 1 - En-tête */
+
+.contact-hero {
+    background-color: var(--color-cream);
+}
+
+.contact-hero__inner {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 5.5rem 2.5rem 4.5rem;
+}
+
+.contact-hero__title {
+    margin: 0;
+    font-family: var(--font-titles);
+    font-weight: 500;
+    font-size: clamp(2.875rem, 6vw, 5rem);
+    line-height: 1.02;
+}
+
+.contact-hero__text {
+    margin: 1.5rem 0 0;
+    max-width: 38.75rem;
+    font-size: 1.1875rem;
+    line-height: 1.65;
+    color: var(--color-salte);
+}
+
+/* Partie 2 - Coordonnées */
+
+.contact-details__inner {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 5.5rem 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4.5rem;
+}
+
+.contact-details__info {
+    flex: 1 1 21.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.contact-details__title {
+    margin: 0;
+    font-family: var(--font-titles);
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 1.1;
+}
+
+.contact-details__label {
+    margin: 0 0 0.25rem;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--color-gold-dark);
+}
+
+.contact-details__link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+    color: var(--color-navy);
+    font-size: 1.125rem;
+}
+
+.contact-details__link:focus-visible {
+    outline: 0.18rem solid var(--color-brown);
+}
+
+.contact-details__text {
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+.contact-details__networks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.75rem;
+}
+
+/* Partie 3 - Formulaire */
+
+.contact-form {
+    flex: 1 1 28.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.375rem;
+}
+
+.contact-form__title {
+    margin: 0;
+    font-family: var(--font-titles);
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 1.1;
+}
+
+.contact-form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-form__label {
+    font-weight: 500;
+}
+
+.contact-form__input {
+    width: 100%;
+    min-height: 3.25rem;
+    padding: 0 1rem;
+    border: 1px solid var(--color-navy);
+    background-color: white;
+    color: var(--color-navy);
+    font-family: var(--font-texts-links);
+    font-size: 1.0625rem;
+}
+
+.contact-form__input--message {
+    padding: 0.875rem 1rem;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+.contact-form__input:focus-visible {
+    outline: 0.18rem solid var(--color-brown);
+    outline-offset: 0.2rem;
+}
+
+.contact-form__button {
+    align-self: flex-start;
+    min-height: 3.25rem;
+    padding: 0 2.25rem;
+    border: none;
+    background-color: var(--color-navy);
+    color: var(--color-cream);
+    font-family: var(--font-texts-links);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.contact-form__button:focus-visible {
+    outline: 0.18rem solid var(--color-brown);
+    outline-offset: 0.2rem;
+}
+
+.contact-form__status {
+    margin: 0;
+    padding: 1.5rem;
+    background-color: var(--color-cream);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+}
+
+/* Partie 4 - Téléchargement du CV */
+
+.contact-cv {
+    background-color: var(--color-navy);
+    color: var(--color-cream);
+}
+
+.contact-cv__inner {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 5rem 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.contact-cv__content {
+    flex: 1 1 26.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.contact-cv__title {
+    margin: 0;
+    font-family: var(--font-titles);
+    font-weight: 500;
+    font-size: clamp(2.125rem, 4vw, 3rem);
+    line-height: 1.1;
+}
+
+.contact-cv__text {
+    margin: 0;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--color-stone);
+}
+
+.contact-cv__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3.25rem;
+    padding: 0 2.25rem;
+    background-color: var(--color-cream);
+    color: var(--color-navy);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-cv__button:focus-visible {
+    outline: 0.18rem solid var(--color-gold-light);
+    outline-offset: 0.2rem;
+}
+
+/* Partie 5 - Responsive */
+
+@media (max-width: 48rem) {
+    .contact-hero__inner {
+        padding: 3.5rem 1.25rem 3rem;
+    }
+
+    .contact-hero__title {
+        font-size: 2.75rem;
+    }
+
+    .contact-hero__text {
+        margin-top: 1.25rem;
+        font-size: 1.0625rem;
+    }
+
+    .contact-details__inner {
+        padding: 3.5rem 1.25rem;
+        gap: 3.5rem;
+    }
+
+    .contact-details__info {
+        gap: 1.5rem;
+    }
+
+    .contact-details__title,
+    .contact-form__title {
+        font-size: 2rem;
+    }
+
+    .contact-details__link {
+        font-size: 1.0625rem;
+    }
+
+    .contact-details__text {
+        font-size: 1.0625rem;
+    }
+
+    .contact-form__button {
+        width: 100%;
+    }
+
+    .contact-cv__inner {
+        padding: 3rem 1.25rem;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.5rem;
+    }
+
+    .contact-cv__content {
+        flex: none;
+    }
+
+    .contact-cv__title {
+        font-size: 2rem;
+    }
+
+    .contact-cv__text {
+        font-size: 1rem;
+    }
+}

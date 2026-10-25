@@ -1,4 +1,5 @@
 import './Footer.css'
+import { Link } from 'react-router'
 
 export default function Footer() {
 
@@ -14,11 +15,11 @@ export default function Footer() {
 
             <nav className="footer__nav" aria-label="Plan du site">
                 <h2 className="footer__heading">Plan du site</h2>
-                <a className="footer__link" href="/">Accueil</a>
-                <a className="footer__link" href="/projets">Projets</a>
-                <a className="footer__link" href="/parcours">Parcours</a>
-                <a className="footer__link" href="/experiences">Expériences</a>
-                <a className="footer__link" href="/contact">Contact</a>
+                <Link className="footer__link" to="/">Accueil</Link>
+                <Link className="footer__link" to="/projets">Projets</Link>
+                <Link className="footer__link" to="/parcours">Parcours</Link>
+                <Link className="footer__link" to="/experiences">Expériences</Link>
+                <Link className="footer__link" to="/contact">Contact</Link>
             </nav>
 
             <div className="footer__social">

@@ -1,4 +1,6 @@
 import './Home.css'
+import projects from '../data/projects.js'
+import { Link } from 'react-router'
 
 export default function Home() {
 
@@ -12,14 +14,14 @@ export default function Home() {
             <p className="hero__title-description">[Deux phrases pour te présenter : ta formation, ce qui te motive, et ce que tu recherches (stage, alternance, premier poste).]</p>
 
             <div className="hero__actions">
-              <a className="hero__button" href="/projets">Découvrir mes projets</a>
-              <a className="hero__button hero__button--secondary" href="/cv-aurelien-thibaut.pdf" download>Télécharger mon CV</a>
+              <Link className="hero__button" to="/projets">Découvrir mes projets</Link>
+              <a className="hero__button hero__button--secondary" href={`${import.meta.env.BASE_URL}cv-aurelien-thibaut.pdf`} download>Télécharger mon CV</a>
             </div>
 
           </div>
 
           <figure className="hero__media">
-            <img className="hero__photo" src="/photo-aurelien.jpg" alt="Portrait d'Aurélien THIBAUT"></img>
+            <img className="hero__photo" src={`${import.meta.env.BASE_URL}photo-aurelien.jpg`} alt="Portrait d'Aurélien THIBAUT"></img>
             <figcaption className="hero__caption">BlablaBla</figcaption>
           </figure>
                 
@@ -35,19 +37,19 @@ export default function Home() {
             <article className="chapters__card chapters__card--projects">
               <h3 className="chapters__card-title">Projets</h3>
               <p className="chapters__card-text">Pour chaque réalisation : le contexte, l’objectif, les compétences mobilisées et les liens utiles.</p>
-              <a className="chapters__card-link" href="/projets">Découvrir mes projets</a>
+              <Link className="chapters__card-link" to="/projets">Découvrir mes projets</Link>
             </article>
 
             <article className="chapters__card chapters__card--path">
               <h3 className="chapters__card-title">Parcours</h3>
               <p className="chapters__card-text">Ce que j’ai appris au fil de l’année et la façon dont j’ai progressé.</p>
-              <a className="chapters__card-link" href="/parcours">Suivre mon parcours</a>
+              <Link className="chapters__card-link" to="/parcours">Suivre mon parcours</Link>
             </article>
 
             <article className="chapters__card chapters__card--experiences">
               <h3 className="chapters__card-title">Expériences</h3>
               <p className="chapters__card-text">Hub, associations, événements : tout ce qui se passe en dehors des projets scolaires.</p>
-              <a className="chapters__card-link" href="/experiences">Découvrir mes expériences</a>
+              <Link className="chapters__card-link" to="/experiences">Découvrir mes expériences</Link>
             </article>
 
           </div>
@@ -59,37 +61,21 @@ export default function Home() {
 
             <div className="featured__header">
               <h2 id="featured-title" className="featured__title">Projets à la une</h2>
-              <a className="featured__all-link" href="/projets">Voir tous les projets</a>
+              <Link className="featured__all-link" to="/projets">Voir tous les projets</Link>
             </div>
 
             <div className="featured__list">
 
-              <article className="featured__card">
-                <div className="featured__media featured__media--navy"></div>
-                <p className="featured__tag">Projet scolaire, [mois 2026]</p>
-                <h3 className="featured__card-title">[Nom du projet 1]</h3>
-                <p className="featured__text">[Contexte et objectif en une phrase.]</p>
-                <p className="featured__tech">[Technologie 1], [Technologie 2], [Technologie 3]</p>
-                <a className="featured__link" href="/projets" aria-label="Découvrir le détail de [Nom du projet 1]">Voir le projet</a>
-              </article>
-            
-              <article className="featured__card">
-                <div className="featured__media featured__media--blue"></div>
-                <p className="featured__tag">Projet scolaire, [mois 2026]</p>
-                <h3 className="featured__card-title">[Nom du projet 2]</h3>
-                <p className="featured__text">[Contexte et objectif en une phrase.]</p>
-                <p className="featured__tech">[Technologie 1], [Technologie 2], [Technologie 3]</p>
-                <a className="featured__link" href="/projets" aria-label="Découvrir le détail de [Nom du projet 2]">Voir le projet</a>
-              </article>
-
-              <article className="featured__card">
-                <div className="featured__media featured__media--light"></div>
-                <p className="featured__tag">Projet scolaire, [mois 2026]</p>
-                <h3 className="featured__card-title">[Nom du projet 3]</h3>
-                <p className="featured__text">[Contexte et objectif en une phrase.]</p>
-                <p className="featured__tech">[Technologie 1], [Technologie 2], [Technologie 3]</p>
-                <a className="featured__link" href="/projets" aria-label="Découvrir le détail de [Nom du projet 3]">Voir le projet</a>
-              </article>
+              {projects.slice(0, 3).map((project) => (
+                <article className="featured__card" key={project.id}>
+                  <div className={`featured__media featured__media--${project.media}`}></div>
+                  <p className="featured__tag">{project.tag}</p>
+                  <h3 className="featured__card-title">{project.title}</h3>
+                  <p className="featured__text">{project.summary}</p>
+                  <p className="featured__tech">{project.stack}</p>
+                  <Link className="featured__link" to={`/projets#${project.id}`} aria-label={`Découvrir le projet ${project.title}`}>Découvrir le projet</Link>
+                </article>
+              ))}
 
             </div>
 
@@ -97,6 +83,7 @@ export default function Home() {
         </section>
 
         <section className="skills" aria-labelledby="skills-title">
+          
           <div className="skills__inner">
 
             <h2 id="skills-title" className="skills__title">Quatre skills à prouver</h2>
@@ -130,6 +117,7 @@ export default function Home() {
             </div>
 
           </div>
+
         </section>
 
         <section className="contact-me" aria-labelledby="contact-me-title">
@@ -137,10 +125,11 @@ export default function Home() {
           <div className="contact-me__inner">
             <h2 id="contact-me-title" className="contact-me__title">Une opportunité à discuter ?</h2>
             <p className="contact-me__text">Stage, alternance, collaboration ou simple retour sur un projet : écris-moi, je réponds rapidement.</p>
-            <a className="contact-me__button" href="/contact">Me contacter</a>
+            <Link className="contact-me__button" to="/contact">Me contacter</Link>
           </div>
 
         </section>
+
     </main>
   )
 }

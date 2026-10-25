@@ -203,6 +203,13 @@
     outline-offset: 0.2rem;
 }
 
+.projects-list__empty {
+    margin: 0;
+    padding: 4rem 0;
+    font-size: 1.0625rem;
+    color: var(--color-salte);
+}
+
 /* Partie 4 - Responsive */
 
 @media (max-width: 48rem) {
