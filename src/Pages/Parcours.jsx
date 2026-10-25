@@ -50,6 +50,9 @@ export default function Parcours() {
 
     <main id="contenu">
 
+      <title>Parcours | Aurélien Thibaut</title>
+      <meta name="description" content="Ce qu'Aurélien Thibaut a appris au fil de l'année à Epitech : chronologie, compétences reliées aux projets, difficultés et axes d'amélioration." />
+
       <section className="path-hero">
 
         <div className="path-hero__inner">

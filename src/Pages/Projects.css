@@ -282,11 +282,26 @@
         font-size: 2rem;
     }
 
-        .project__media {
+    .project__media {
         padding: 1.25rem;
     }
 
     .project__placeholder {
         font-size: 1.625rem;
     }
+
+}
+
+.project__media--image {
+    padding: 0;
+    align-items: stretch;
+    min-width: 0;
+}
+
+.project__image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: left top;
+    border: 1px solid var(--color-light-grey);
 }

@@ -31,6 +31,9 @@ export default function Projects () {
 
         <main id="contenu">
 
+            <title>Projets | Aurélien Thibaut</title>
+            <meta name="description" content="Les projets d’Aurélien Thibaut : contexte, objectif, technologies et liens (code source, démo, documentation)." />
+
             <section className="projects-hero">
 
                 <div className="projects-hero__inner">

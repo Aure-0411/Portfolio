@@ -242,6 +242,15 @@
     background-color: var(--color-blue-light);
 }
 
+.featured__image {
+    display: block;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    object-position: left top;
+    border: 1px solid var(--color-light-grey);
+}
+
 .featured__tag {
     margin: 0;
     font-size: 0.9rem;
@@ -464,6 +473,11 @@
     .featured__media {
         height: 13.75rem;
     }
+
+    .featured__image {
+        height: 13.75rem;
+    }
+
     .featured__card {
         gap: 0.6rem;
     }

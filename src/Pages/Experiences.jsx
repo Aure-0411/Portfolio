@@ -29,6 +29,9 @@ export default function Experiences() {
 
     <main id="contenu">
 
+      <title>Expériences | Aurélien Thibaut</title>
+      <meta name="description" content="Les expériences d'Aurélien Thibaut en dehors des projets scolaires : piscines/bootcamp, engagements, philosophie professionnelle et centres d'intérêt." /> 
+
       <section className="experiences-hero">
 
         <div className="experiences-hero__inner">

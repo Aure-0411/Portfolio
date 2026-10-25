@@ -4,9 +4,15 @@ export default function ProjectCard({ project }) {
 
     <article className="project" id={project.id}>
 
-      <div className={`project__media project__media--${project.media}`}>
-        <span className="project__placeholder" aria-hidden="true">[Capture du projet]</span>
-      </div>
+      {project.image ? (
+        <div className="project__media project__media--image">
+          <img className="project__image" src={`${import.meta.env.BASE_URL}${project.image}`} alt={project.imageAlt} />
+        </div>
+      ) : (
+        <div className={`project__media project__media--${project.media}`}>
+          <span className="project__placeholder" aria-hidden="true">[Capture du projet]</span>
+        </div>
+      )}
 
       <div className="project__body">
 

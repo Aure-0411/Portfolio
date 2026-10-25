@@ -18,6 +18,9 @@ export default function Contact() {
 
     <main id="contenu">
 
+      <title>Contact | Aurélien Thibaut</title>
+      <meta name="description" content="Contacter Aurélien Thibaut pour une alternance, une collaboration ou une question sur un projet : e-mail, réseaux professionnels et CV à télécharger." />
+
       <section className="contact-hero">
         <div className="contact-hero__inner">
           <h1 className="contact-hero__title">Contactez-moi</h1>
